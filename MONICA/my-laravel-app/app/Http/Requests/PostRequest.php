@@ -13,7 +13,7 @@ class PostRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return false;
     }
 
     /**
@@ -25,16 +25,6 @@ class PostRequest extends FormRequest
     {
         return [
             //
-            'title' => 'required|min:3',
-            'body' => 'required'
         ];
-    }
-
-    // Validation のエラーメッセージのカスタマイズ
-    public function messages() {
-      return [
-        'title.required' => 'please enter title!!!',
-        'body.required'  => 'please enter body!!!'
-      ];
     }
 }
