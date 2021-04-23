@@ -1,5 +1,5 @@
 # variety-of-tables-scheme-documentation
-オープンソースのテーブルスキーマを見てみよう！
+This was created to study DB design from table schema of open source.
 
 
  * [Redmine](Redmine/tbls/doc/schema/README.md)
