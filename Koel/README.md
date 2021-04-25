@@ -137,7 +137,11 @@ php artisan db:seed --class=Question01RegistrationInformationTableSeeder
 php artisan migrate:refresh --seed
 ```
 
+composer require doctrine/dbal
+
+
 php artisan migrate:fresh
+
 
 ______________________________________________________________________
 ## テーブル定義作成
