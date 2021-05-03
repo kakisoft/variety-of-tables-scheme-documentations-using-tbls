@@ -5,6 +5,7 @@ It will be updated for reference.
 
 
  * [Redmine](Redmine/tbls/doc/schema/README.md)
+ * [WordPress](WordPress/tbls/doc/schema/README.md)
  * [Koel](Koel/tbls/doc/schema/README.md)
 
 ______________________________________________________________________

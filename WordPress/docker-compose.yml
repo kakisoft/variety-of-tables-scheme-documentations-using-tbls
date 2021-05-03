@@ -1,39 +1,33 @@
-version: '2.0'
- 
+version: '3.1'
+
 services:
-    nginx:
-        image: nginx
-        ports:
-            - '8080:80'
-        volumes:
-            - ./nginx:/etc/nginx/conf.d
-            - ./logs/nginx:/var/log/nginx
-            - ./wordpress:/var/www/html
-        links:
-            - wordpress
-        restart: always
-    mysql:
-        image: mariadb 
-        ports:
-            - '3306:3306'
-        volumes:
-            - ./db-data:/var/lib/mysql 
-        environment:
-            - MYSQL_ROOT_PASSWORD=pass
-        restart: always
-    wordpress:
-        image: wordpress:4.9-php7.1-fpm
-        ports:
-            - '9000:9000'
-        volumes:
-            - ./wordpress:/var/www/html
-        environment:
-            WORDPRESS_DB_NAME: wpdb
-            WORDPRESS_TABLE_PREFIX: wp_
-            WORDPRESS_DB_HOST: mysql
-            WORDPRESS_DB_PASSWORD: pass
-        links:
-            - mysql
-        depends_on:
-            - mysql
-        restart: always
+
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: exampleuser
+      WORDPRESS_DB_PASSWORD: examplepass
+      WORDPRESS_DB_NAME: exampledb
+    volumes:
+      - wordpress:/var/www/html
+
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: exampledb
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    ports:
+      - "3306:3306"
+    volumes:
+      - db:/var/lib/mysql
+
+volumes:
+  wordpress:
+  db:
