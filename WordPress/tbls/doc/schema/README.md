@@ -1,4 +1,4 @@
-# exampledb
+# wordpress
 
 ## Tables
 
