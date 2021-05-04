@@ -1,11 +1,11 @@
-## docker hub : WordPress image
-https://hub.docker.com/_/wordpress  
+## docker hub
+https://hub.docker.com/_/monica/  
 
 docker-compose.yml は、公式記載の内容から、少し修正しています。  
 
 ```yaml
-    ports:
-      - "3306:3306"
+  ports:
+    - "3306:3306"
 ```
 
 ## 起動・終了

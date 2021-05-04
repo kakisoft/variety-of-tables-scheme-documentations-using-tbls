@@ -1,30 +1,36 @@
-version: '3'
+version: "3.4"
+
 services:
-  web:
-    image: nginx:1.15.6
-    ports:
-      - "8000:80"
-    depends_on:
-      - app
-    volumes:
-      - ./docker/web/default.conf:/etc/nginx/conf.d/default.conf
-      - .:/var/www/html
   app:
-    build: ./docker/php
+    image: monica
     depends_on:
-    - mysql
+      - db
+    ports:
+      - 8080:80
+    environment:
+      - APP_KEY=kakisoft
+      - DB_HOST=db
+      - DB_USERNAME=usermonica
+      - DB_PASSWORD=secret
     volumes:
-      - .:/var/www/html
-  mysql:
+      - data:/var/www/html/storage
+    restart: always
+
+  db:
     image: mysql:5.7
     environment:
-      MYSQL_DATABASE: myapp01
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
-      MYSQL_ROOT_PASSWORD: password
+      - MYSQL_RANDOM_ROOT_PASSWORD=true
+      - MYSQL_DATABASE=monica
+      - MYSQL_USER=usermonica
+      - MYSQL_PASSWORD=secret
+    volumes:
+      - mysql:/var/lib/mysql
     ports:
       - "3306:3306"
-    volumes:
-      - mysql-data:/var/lib/mysql
+    restart: always
+
 volumes:
-  mysql-data:
+  data:
+    name: data
+  mysql:
+    name: mysql

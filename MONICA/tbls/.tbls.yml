@@ -1,0 +1,16 @@
+
+# .tbls.yml
+
+# 接続先として、データベースの種類(`mysql`)、ユーザ名(`dbuser`)、パスワード(`dbpass`)、ホスト名(`localhost`)、ポート(`3306`)、データベース名(`dbname`)を以下のように記載します
+# dsn: mysql://dbuser:dbpass@localhost:3306/dbname
+dsn: mysql://usermonica:secret@localhost:3306/monica
+
+# ドキュメントのディレクトリを指定します
+docPath: doc/schema
+
+
+    # environment:
+    #   - MYSQL_RANDOM_ROOT_PASSWORD=true
+    #   - MYSQL_DATABASE=monica
+    #   - MYSQL_USER=usermonica
+    #   - MYSQL_PASSWORD=secret
