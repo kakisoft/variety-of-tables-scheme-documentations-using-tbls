@@ -1,4 +1,4 @@
-# homestead
+# laracom
 
 ## Tables
 
