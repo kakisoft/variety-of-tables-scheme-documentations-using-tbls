@@ -8,6 +8,7 @@ It will be updated for reference.
  * [WordPress](WordPress/tbls/doc/schema/README.md)
  * [Koel](Koel/tbls/doc/schema/README.md)
  * [MONICA](MONICA/tbls/doc/schema/README.md)
+ * [Laracom](Laracom/tbls/doc/schema/README.md)
 
 ______________________________________________________________________
 
