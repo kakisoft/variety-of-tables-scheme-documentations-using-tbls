@@ -9,6 +9,7 @@ It will be updated for reference.
  * [Koel](Koel/tbls/doc/schema/README.md)
  * [MONICA](MONICA/tbls/doc/schema/README.md)
  * [Laracom](Laracom/tbls/doc/schema/README.md)
+ * [Vuedo](Vuedo/tbls/doc/schema/README.md)
 
 ______________________________________________________________________
 
