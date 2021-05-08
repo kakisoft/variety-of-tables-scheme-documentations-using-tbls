@@ -1,4 +1,4 @@
-## docker hub
+## docker hub (ver 12)
 https://hub.docker.com/_/odoo  
 
 #### ver 12
