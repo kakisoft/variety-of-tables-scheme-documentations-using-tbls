@@ -3,15 +3,16 @@
 
 # 接続先として、データベースの種類(`mysql`)、ユーザ名(`dbuser`)、パスワード(`dbpass`)、ホスト名(`localhost`)、ポート(`3306`)、データベース名(`dbname`)を以下のように記載します
 # dsn: mysql://dbuser:dbpass@localhost:3306/dbname
-dsn: mysql://root:secret@localhost:3306/homestead
+dsn: postgres://odoo:odoo@localhost:5432/odoo
 
 # ドキュメントのディレクトリを指定します
 docPath: doc/schema
 
 
     # environment:
-    #   MYSQL_DATABASE: homestead
-    #   MYSQL_USER: homestead
-    #   MYSQL_ROOT_PASSWORD: secret
-    #   SERVICE_TAGS: dev
-    #   SERVICE_NAME: mysql
+    #   - POSTGRES_DB=postgres
+    #   - POSTGRES_PASSWORD=odoo
+    #   - POSTGRES_USER=odoo
+    #   - PGDATA=/var/lib/postgresql/data/pgdata
+    # ports:
+    #   - "5432:5432"
