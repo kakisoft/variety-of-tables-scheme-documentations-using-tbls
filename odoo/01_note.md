@@ -38,3 +38,9 @@ _____________________________________________________________________
  1. ```.tbls.yml``` を作成
  2. ```tbls doc``` を実行
 
+
+Windows だと上手く行かず。以下のコマンドにした。  
+```
+docker pull k1low/tbls:latest
+docker run  --rm -v "$PWD\:/work" --net="host" k1low/tbls doc
+```
