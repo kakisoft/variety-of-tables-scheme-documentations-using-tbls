@@ -18,4 +18,18 @@ dial tcp [::1]:5432: connect: connection refused
 http://localhost:8069/
 が表示されない
 
+___________________________________________________________________________
+
+
+### issue
+https://github.com/k1LoW/tbls/issues/300
+```
+# DSN (Database Source Name) to connect database
+dsn: postgres://dbuser:dbpass@localhost:5432/dbname?sslmode=disable
+```
+```
+dsn: pg://postgres:pgpass@localhost:55432/testdb?sslmode=disable
+
+```
+
 
