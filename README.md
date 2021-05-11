@@ -10,6 +10,7 @@ It will be updated for reference.
  * [MONICA](MONICA/tbls/doc/schema/README.md)
  * [Laracom](Laracom/tbls/doc/schema/README.md)
  * [Vuedo](Vuedo/tbls/doc/schema/README.md)
+ * [odoo](odoo/tbls/doc/schema/README.md)
 
 ______________________________________________________________________
 
