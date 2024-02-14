@@ -1,4 +1,4 @@
-# variety-of-tables-scheme-documentations
+# variety-of-tables-scheme-documentations-using-tbls
 This was created to study DB design from table schema of open source.  
 
 It will be updated for reference.  
