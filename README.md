@@ -12,6 +12,11 @@ It will be updated for reference.
  * [Vuedo](Vuedo/tbls/doc/schema/README.md)
  * [odoo](odoo/tbls/doc/schema/README.md)
 
+
+## See Also
+[variety-of-tables-scheme-documentations-using-schemaspy](https://github.com/kakisoft/variety-of-tables-scheme-documentations-using-schemaspy)
+
+
 ______________________________________________________________________
 
 These database documents are created with [tbls](https://github.com/k1LoW/tbls).
